@@ -1,7 +1,7 @@
-**Movie Recommendation System
+**Movie Recommendation System**
 
 
-Overview**
+**Overview**
 
 This project implements a content-based movie recommendation system using the TMDB top-rated movies dataset. The system recommends movies based on the similarity of their overviews, leveraging TF-IDF vectorization and cosine similarity to identify movies with similar themes or narratives.
 Dataset
@@ -28,20 +28,20 @@ scikit-learn
 **Install them using pip:**
 pip install pandas numpy matplotlib seaborn scikit-learn
 
-Project Structure
+**Project Structure**
 
 Movie_recommendation_systems(Top_Rated_Movies_Loved_by_Millions).ipynb: Jupyter notebook containing the project code
 tmdb_top_rated_movies.csv: Dataset file (place in the appropriate directory, e.g., /content/drive/MyDrive/Data analysis projects/)
 README.md: This file
 
-Setup
+**Setup**
 
 Clone or download this repository.
 Ensure the dataset (tmdb_top_rated_movies.csv) is accessible in the specified path or update the file path in the notebook.
 Install the required Python libraries (see Prerequisites).
 Open the Jupyter notebook in an environment like JupyterLab, Google Colab, or VS Code.
 
-Usage
+**Usage**
 
 Run the Jupyter notebook cells in sequence to:
 Load and explore the dataset
@@ -54,7 +54,7 @@ Use the get_recommendations function to get movie recommendations. Example:get_r
 
 This will return the top 10 movies similar to Schindler's List based on overview similarity.
 
-Example Output
+**Example Output**
 For Schindler's List, the system might recommend:
 
 Everything Is Illuminated
@@ -68,31 +68,32 @@ The Last Metro
 Blood & Gold
 Inglourious Basterds
 
-Methodology
+**Methodology**
 The system uses content-based filtering:
 
 Text Preprocessing: Movie overviews are converted to TF-IDF vectors, with English stop words removed.
 Similarity Computation: Cosine similarity is calculated between all movie overviews using linear_kernel.
 Recommendation: The get_recommendations function retrieves the top 10 movies with the highest similarity scores for a given movie title.
 
-Limitations
+**Limitations**
 
 Relies solely on movie overviews, which may miss other relevant features (e.g., genre, director).
 Primarily suited for English-language movies due to dataset bias.
 Short or vague overviews may reduce recommendation accuracy.
 
-Future Improvements
+**Future Improvements**
 
-Incorporate additional features like genres or cast.
+Incorporate additional features, such as genres or cast.
 Combine with collaborative filtering for a hybrid approach.
 Enhance text preprocessing with lemmatization or named entity recognition.
 Add visualizations of similarity scores or movie clusters.
 
-Contributing
+**Contributing**
 Contributions are welcome! Please submit a pull request or open an issue for suggestions or improvements.
 License
 This project is licensed under the MIT License.
-Acknowledgments
+
+**Acknowledgments**
 
 The Movie Database (TMDB) for providing the dataset.
 Scikit-learn for NLP and similarity computation tools.
