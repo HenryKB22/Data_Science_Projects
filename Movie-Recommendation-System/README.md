@@ -1,5 +1,8 @@
 Movie Recommendation System
+
+
 Overview
+
 This project implements a content-based movie recommendation system using the TMDB top-rated movies dataset. The system recommends movies based on the similarity of their overviews, leveraging TF-IDF vectorization and cosine similarity to identify movies with similar themes or narratives.
 Dataset
 The dataset (tmdb_top_rated_movies.csv) contains metadata for 10,000 top-rated movies from The Movie Database (TMDB). Key features include:
