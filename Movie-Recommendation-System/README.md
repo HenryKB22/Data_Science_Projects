@@ -1,7 +1,7 @@
-Movie Recommendation System
+**Movie Recommendation System
 
 
-Overview
+Overview**
 
 This project implements a content-based movie recommendation system using the TMDB top-rated movies dataset. The system recommends movies based on the similarity of their overviews, leveraging TF-IDF vectorization and cosine similarity to identify movies with similar themes or narratives.
 Dataset
@@ -9,14 +9,14 @@ The dataset (tmdb_top_rated_movies.csv) contains metadata for 10,000 top-rated m
 
 id: Unique movie identifier
 original_language: Language of the movie (e.g., 'en' for English)
-overview: Textual description of the movie's plot
+Overview: Textual description of the movie's plot
 release_date: Movie release date
 title: Movie title
 popularity: Popularity score
 vote_average: Average rating (0-10)
 vote_count: Number of votes
 
-Prerequisites
+**Prerequisites**
 To run this project, you need the following Python libraries:
 
 pandas
@@ -25,7 +25,7 @@ matplotlib
 seaborn
 scikit-learn
 
-Install them using pip:
+**Install them using pip:**
 pip install pandas numpy matplotlib seaborn scikit-learn
 
 Project Structure
